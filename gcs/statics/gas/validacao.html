@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from accounts.bb.com.br/gcs/statics/gas/validacao.bb by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Dec 2022 02:27:58 GMT -->
+<head>
+    
+		<title>[bb.com.br]</title>
+    	 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,requiresActiveX=true">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="shortcut icon" href="../commons/bbfav.ico">
+        <link rel="stylesheet" href="css/idh.gas.gcs.css"  media="all">
+        <link rel="stylesheet" href="../commons/bb.loading/bb.loading.css"  media="all">
+        
+    </head>
+    
+    <body>
+    
+    	<!-- loading -->
+		<div ng-if="!appInitialized" class="logo-body">
+			<div class="logo-container">
+				<div class="logo-container-center">
+					<div class="logo-border">
+						<img class="bb" src="../commons/bb.loading/logoLoading.png" alt="Loading...">
+					</div>
+				</div>
+	
+				<span id="aguarde">
+					Verificando a solução de segurança...
+				</span>
+	
+				<span id="falha" style="display: none;">
+					<br>
+					<p>Prezado cliente, não foi possível carregar o Módulo de Segurança.</p>
+					<p>Este componente visa proteger sua conexão contra ações maliciosas durante o acesso ao canal de
+					Autoatendimento pela Internet do Banco do Brasil.</p>
+					<p>Clique no botão abaixo para acessar a página de diagnóstico e corrigir o problema.</p>
+
+					<input class="btnDiagnostico" type="button" value="Diagnóstico do Módulo de Segurança" class="botaobb"
+						onclick="window.location = infos.urlDiagnosticoSegBB;">
+				</span>
+			</div>
+		</div>
+		<!-- loading -->
+		
+        <object id="GbPluginObjIe" classid='CLSID:E37CB5F0-51F5-4395-A808-5FA49E399F83' ></object>
+        
+        <div id="gbasapplet" style="float: left;"></div>
+
+		<!-- 'ajuste' do problema do console para o ie -->
+		<script src="../commons/bb.util/bb.util.console-trick.js"></script>
+
+		<!-- jquery -->
+		<script src="../commons/lib/jquery/dist/jquery.js"></script>
+        
+        <!-- libs utilitárias -->
+        <script src="js/util/deploy-java.js"></script>
+        
+        <!-- libs warsaw (caso seja preciso) -->
+        <script src="js/warsaw-lib/warsaw-agent.js"></script>
+        <script src="js/warsaw-lib/warsaw-wrapper.js"></script>
+        
+        <!-- validação em si -->
+        <script src="js/warsaw-checker.js"></script>
+        <script src="js/main.js" ></script>
+        
+		<!-- Piwik -->
+		<script type="text/javascript" 
+			src="../../analytics/piwik.js"
+			async
+			defer></script>
+
+    </body>
+
+<!-- Mirrored from accounts.bb.com.br/gcs/statics/gas/validacao.bb by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Dec 2022 02:28:00 GMT -->
+</html>
